@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.divdata{
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.commons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+ 
+    margin-top: 30px;
+}
+.commons h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:32% ;
+    
+}
+.Secondsection{
+    border: 1px solid rgb(128, 127, 127);
+
+    width: 290px;
+    background-color: white;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.Secondsection img{
+    width: 260px;
+}
+.Secondsection button{
+    border-radius: 5px;
+}
+.recommend{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+.recommend:hover{
+    transform: translateY(-10px);
+    box-shadow:  0 10px 25px rgba(0,0,0,0.2);
+}
+

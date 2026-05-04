@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Footer{
+    background-color: navy;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 45px; 
+}
+.footericon img{
+    width: 90px;
+}
+.fottericons{
+    font-size: 26px;
+  
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+.fottericons p:hover{
+    color:rgb(45, 143, 228);
+}
+.footercontact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.footercontact p:hover{
+     color:rgb(45, 143, 228); 
+}
+.footersosial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footericon {
+    display: flex;
+   align-items: center;
+   gap: 10px;
+}

@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.formsection{
+    
+    background-image:url("https://morshopfitting.com/wp-content/uploads/2024/01/Crafting-Elegance-Bespoke-Clothing-Boutique-Integrates-Modern-Design-Store-Fixtures-Morshopfitting-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+}
+.inpdiv{
+   position: relative;
+    margin-top: 50px;
+}
+.inpdiv .icon{
+    position: absolute;
+   top:33%;
+   right: 10px;
+    width: 30px;
+   font-size: 20px;
+}
+.inpdiv input::placeholder{
+    color: black;
+}
+.inpdiv input{
+    position: relative;
+    width: 560px;
+    outline: none;
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+   backdrop-filter: blur(10px);
+   background: rgba(255,255, 255,0.3);
+  
+}
