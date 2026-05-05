@@ -1,0 +1,154 @@
+/* Contact.css */
+
+/* Bütün səhifəni əhatə edən böyük fon və ortalama */
+.contact-page-wrapper {
+  background-color: #F4F7FF;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Əsas fərqli kart */
+.contact-main-card {
+  background-color: #ffffff;
+  width: 900px;
+  max-width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(108, 99, 255, 0.15);
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/* Sol tərəf - Canlı rəngli gradient blok */
+.contact-left-gradient {
+  flex: 1 1 350px;
+  background: linear-gradient(135deg, #6C63FF 0%, #FF6584 100%);
+  padding: 45px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.contact-left-gradient h2 {
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact-left-gradient p {
+  opacity: 0.9;
+  line-height: 1.6;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.contact-info-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Sağ tərəf - Ağ form bölməsi */
+.contact-right-form {
+  flex: 1 1 450px;
+  padding: 50px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.contact-right-form h2 {
+  color: #2D3436;
+  margin: 0 0 8px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.contact-right-form p {
+  color: #718096;
+  margin: 0 0 30px 0;
+  font-size: 15px;
+}
+
+/* Rəngli, fərqli İnputlar */
+.contact-input-field {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 10px 0 20px 0;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #F8FAFC;
+  transition: all 0.3s ease;
+}
+
+/* İnputa klikləyəndə işləyən rəng keçidi */
+.contact-input-field:focus {
+  border-color: #6C63FF;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+.contact-textarea {
+  resize: none;
+}
+
+/* Göndərilmə bildirişi */
+.contact-success-alert {
+  background-color: #D1FAE5;
+  color: #065F46;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #A7F3D0;
+  font-size: 15px;
+}
+
+/* Canlı, rəngli düymə */
+.contact-submit-btn {
+  background: linear-gradient(135deg, #6C63FF 0%, #5145CD 100%);
+  color: #ffffff;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.3);
+  width: 100%;
+}
+
+/* Düyməyə yaxınlaşanda qalxma effekti */
+.contact-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.4);
+}
+
+.contact-submit-btn:active {
+  transform: translateY(0);
+}
