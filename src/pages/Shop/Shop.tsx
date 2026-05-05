@@ -69,7 +69,7 @@ const ProductList: React.FC = () => {
         <div className="cart-section">
         <h2>Shop / Basket</h2>
         {cart.map((item) => (
-          <div key={item.id} className="cart-card" style={{ border: '1px solid gray', margin: '10px', padding: '10px' }}>
+          <div key={item.id} className="cart-card" style={{ border: '1px solid gray', margin: '10px', padding: '10px', borderRadius: '10px' }}>
             <h4>{item.title}</h4>
             <p>Qiymət: {item.price} AZN</p>
             
