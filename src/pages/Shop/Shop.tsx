@@ -50,7 +50,12 @@ const ProductList: React.FC = () => {
   };
 
   return (
-    <div className='divdata'>
+  <div className="divcommon">
+    <div className="divtext">
+  <h2>Shop / Basket</h2>
+    </div>
+      <div className='divdata'>
+      
       {/* Məhsullar siyahısı */}
       {product.map((item) => (
         <div key={item.id} className='Secondsectionmain'>
@@ -68,7 +73,7 @@ const ProductList: React.FC = () => {
       <br />
       <br />
         <div className="cart-section">
-        <h2>Shop / Basket</h2>
+      
         {cart.map((item) => (
           <div key={item.id} className="cart-card" style={{ border: '1px solid gray', margin: '10px', padding: '10px', borderRadius: '10px' }}>
             <h4>{item.title}</h4>
@@ -89,6 +94,7 @@ const ProductList: React.FC = () => {
         )}
       </div>
     </div>
+  </div>
   );
 };
 

@@ -1,10 +1,46 @@
+.divtext{
+  
+    width:86%;
+    margin: 0 auto;
+}
+.divcommon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Secondsection button{
+width: 60%;
+border: none;
+cursor: pointer;
+padding: 6px;
+background-color: navy;
+color: white;
+}
+.Secondsection button:hover{
+    background-color: transparent;
+    color: navy;
+    border: 1px solid navy;
+
+}
+@media(max-width:1300px){
+.divtext{
+  
+    width:95%;
+    margin: 0 auto;
+}
+}
 @media(max-width:1400px){
-  .Secondsectionmain{
+ .divtext{
   
-   
-  }
+    width:95%;
+    margin: 0 auto;
+}
   .divdata{
-  
+
      flex-wrap: wrap;
+  }
+  .cart-section{
+
+    background-color: aqua;
   }
 }
