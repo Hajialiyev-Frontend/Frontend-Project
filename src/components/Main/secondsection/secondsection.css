@@ -64,7 +64,9 @@
     width: 100% !important;
     padding: 10px !important;
   }
-
+   .commons h2{
+    margin: 12px;
+   }
   /* Kartların özünün ölçüləri (Balacalaşdırılmış və səliqəli halı) */
   .card, .product-card {
     width: 160px !important;  /* Eni kiçildildi, telefonda yanaşı rahat dura bilsinlər */
