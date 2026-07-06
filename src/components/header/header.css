@@ -64,3 +64,27 @@
     flex-direction: column;
     gap: 5px;
 }
+/* Ekran ölçüsü 768px və daha kiçik olan cihazlar (Telefonlar) üçün */
+@media (max-width: 768px) {
+  .headercontainer {
+    flex-direction: column; /* Loqo və menyunu alt-alta salır */
+    gap: 15px;             /* Aralarında məsafə qoyur */
+    padding: 15px 10px;    /* Daxili sıxlığı tənzimləyir */
+    text-align: center;
+    width: 100%;           /* Ekranı tam tutsun */
+  }
+
+  .headernav ul {
+    display: flex;
+    flex-direction: row;   /* Linkləri yan-yana saxlayır */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;             /* Linklərin arasını açır ki, rahat kliklənsin */
+    padding: 0;
+    margin: 0;
+  }
+
+  .headernav ul li {
+    font-size: 14px;       /* Telefonda yazını bir az kiçildir */
+  }
+}

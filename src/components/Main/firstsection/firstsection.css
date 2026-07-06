@@ -40,3 +40,67 @@
    background: rgba(255,255, 255,0.3);
   
 }
+/* --- KOMPÜTER ÜÇÜN ƏSAS AYARLAR --- */
+.formsection {
+  width: 100% !important;
+  min-height: 500px !important; /* Arxa fon şəklinin hündürlüyü (istədiyin kimi dəyişə bilərsən) */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  padding: 20px !important;
+  
+  /* Əgər CSS-də arxa fon şəkli qoymusansa, bu 3 sətir mütləq olmalıdır ki, telefonda şəkil əyilməsin */
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.inpdiv {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 500px !important; /* Kompüterdə axtarış çubuğu çox uzanmasın, maksimum 500px olsun */
+}
+
+.input {
+  width: 100% !important;
+  padding: 12px 45px 12px 20px !important; /* Sağ tərəfdən ikon üçün boşluq buraxır */
+  border: 1px solid #ccc !important;
+  border-radius: 25px !important; /* Oval, qəşəng axtarış qutusu */
+  outline: none !important;
+  font-size: 16px !important;
+  background-color: rgba(255, 255, 255, 0.9) !important; /* İnputun içi bir az şəffaf ağ olsun */
+}
+
+.icon {
+  position: absolute !important;
+  right: 18px !important; /* İkonu inputun tam sağına yerləşdirir */
+  font-size: 22px !important;
+  color: #333 !important;
+  z-index: 2 !important;
+}
+
+
+/* --- TELEFON ÜÇÜN RESPONSIVE AYARLAR --- */
+@media screen and (max-width: 768px) {
+  .formsection {
+    min-height: 300px !important; /* Telefonda ekran kiçik olduğu üçün hündürlüyü azaldırıq */
+    padding: 15px !important;
+  }
+
+  .inpdiv {
+    width: 85% !important; /* Telefonda axtarış qutusu ekranın 85%-ni tutsun ki, kənarlara sıxışmasın */
+  }
+
+  .input {
+    font-size: 14px !important; /* Telefonda yazı ölçüsünü bir az kiçildirik */
+    padding: 10px 40px 10px 15px !important;
+  }
+  
+  .icon {
+    font-size: 18px !important; /* Telefonda axtarış ikonunu bir az kiçildirik */
+    right: 15px !important;
+  }
+}

@@ -47,3 +47,88 @@
    align-items: center;
    gap: 10px;
 }
+/* --- KOMPÜTER ÜÇÜN ƏSAS AYARLAR --- */
+.Footer {
+  background-color: #00008b; /* Tünd göy rəng */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Hər bir bölmənin ümumi nizamlanması */
+.footernav, .footersosial, .footercontact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Loqo və Başlığın durduğu hissə */
+.footericon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footericon img {
+  width: 80px; /* Loqo şəklini çox böyük olmaqdan qoruyur */
+  height: auto;
+}
+
+/* H2 Başlıqları (CLOTHING STORE, SOSIAL və CONTACT üçün) */
+.Footer h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+/* Kontakt yazıları və mətnlər */
+.Footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Sosial İkonların durduğu konteyner */
+.fottericons {
+  display: flex;
+  gap: 15px;
+}
+
+/* İkonların daxilindəki SVG-lərin ölçüsü və rəngi */
+.fottericons p {
+  margin: 0;
+  font-size: 24px; /* İkonların ölçüsü */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.fottericons p:hover {
+  transform: scale(1.1); /* Siçanı üzərinə gətirəndə bir az böyüyür */
+}
+
+
+/* --- TELEFON ÜÇÜN RESPONSIVE AYARLAR --- */
+@media (max-width: 768px) {
+  .Footer {
+    flex-direction: column;   /* Elementləri alt-alta yığır */
+    align-items: center;      /* Tam ortaya hizalayır */
+    text-align: center;       /* Yazıları ortalayır */
+    padding: 30px 20px;       /* Ekran kənarı boşluqları azaldır */
+    gap: 35px;                /* Bölmələr arasında məsafə qoyur */
+  }
+
+  .footernav, .footersosial, .footercontact, .footericon {
+    width: 100%;
+    align-items: center;      /* Telefonda içindəki hər şeyi ortalayır */
+  }
+
+  .fottericons {
+    justify-content: center;  /* İkonları tam mərkəzə gətirir */
+  }
+}
