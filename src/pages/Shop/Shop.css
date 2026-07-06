@@ -1,42 +1,10 @@
-/* --- TELEFON REJİMİ (MƏCBURİ) --- */
-@media screen and (max-width: 768px) {
-  /* Səhifəni saxlayan ən əsas böyük konteyner */
-  .shop-page-container, .shop-layout {
-    display: flex !important;
-    flex-direction: column !important; /* Hər şeyi yuxarıdan aşağı düzür */
-    align-items: center !important;
+@media(max-width:1400px){
+  .Secondsectionmain{
+  
+   
   }
-
-  /* Məhsul kartlarının durduğu sahə (2 üstdə, 2 altda olacaq şəkildə) */
-  .shop-products-grid, .shop-cards {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important; /* 2 bərabər sütun yaradır */
-    gap: 15px !important; /* Kartlar arası boşluq */
-    width: 100% !important;
-    padding: 10px !important;
-    order: 1 !important; /* Kartları yuxarıda saxlayır */
-  }
-
-  /* Shop səhifəsindəki fərdi kartlar */
-  .shop-card {
-    width: 100% !important;
-    max-width: 170px !important;
-    height: auto !important;
-    padding: 10px !important;
-  }
-
-  .shop-card img {
-    width: 100% !important;
-    height: 150px !important;
-    object-fit: cover !important;
-  }
-
-  /* "Shop / Basket" yazısı və ya sağ panel hissəsi */
-  .shop-basket-title, .basket-sidebar {
-    width: 100% !important;
-    text-align: center !important;
-    margin-top: 30px !important;
-    padding: 20px !important;
-    order: 2 !important; /* Bu əmr yazını tam olaraq kartların ALTINA salır */
+  .divdata{
+  
+     flex-wrap: wrap;
   }
 }

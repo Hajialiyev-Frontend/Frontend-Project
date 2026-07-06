@@ -10,6 +10,7 @@ interface CartItem extends Product {
 }
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "./Shop.css"
 
 const ProductList: React.FC = () => {
   const [product, setProduct] = useState<Product[]>([]);
