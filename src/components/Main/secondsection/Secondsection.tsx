@@ -17,7 +17,7 @@ function Secondsection() {
          <div className='divdata'>
          
             {
-                product.map((item) => (
+                product.map((item :any) => (
                  <div className="recommend">
                        <div key={item.id}>
                         <div className='Secondsectionmain '>
