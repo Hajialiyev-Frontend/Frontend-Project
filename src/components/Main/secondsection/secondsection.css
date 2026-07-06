@@ -53,33 +53,48 @@
     transform: translateY(-10px);
     box-shadow:  0 10px 25px rgba(0,0,0,0.2);
 }
-
+/* --- TELEFON ÜÇÜN RESPONSIVE AYARLAR --- */
 @media screen and (max-width: 768px) {
-  /* Məhsul kartlarını saxlayan əsas böyük qutu */
-  /* Diqqət: Aşağıdakı .products-container hissəsini öz kodundakı klas adı ilə əvəzlə */
-  .products-container, .cards, .secondsection {
+  
+  /* Başlığı ("Recommended for You") tam ortalayır və kənarlardan məsafə verir */
+  .secondsection h2, .main h2, h2 { 
+    text-align: center !important;
+    margin: 20px auto !important;
+    width: 100% !important;
+    font-size: 24px !important;
+  }
+
+  /* Kartların yığıldığı əsas böyük qutu (Kompüterdə yan-yana olan hissə) */
+  /* Sizin kodda adı .cards və ya .products-container ola bilər */
+  .cards, .products-container, .secondsection > div {
     display: flex !important;
     flex-direction: column !important; /* Kartları mütləq alt-alta salır */
     align-items: center !important;    /* Kartları ekranda ortalayır */
-    gap: 25px !important;              /* Kartların arasına boşluq qoyur */
+    gap: 20px !important;              /* Kartların arasına gözəl boşluq qoyur */
     width: 100% !important;
-    overflow-x: hidden !important;     /* Sağa-sola lazımsız sürüşməni bağlayır */
+    padding: 10px !important;
+    overflow-x: hidden !important;     /* Sağa-sola sürüşməni tamamilə bağlayır */
   }
 
-  /* Məhsul kartlarının özü (Videodakı Emporio Armani, Gucci kartları) */
-  /* Diqqət: .product-card hissəsini öz kart klasınla əvəzlə */
-  .product-card, .card {
-    width: 85% !important;             /* Telefonda ekranın 85%-ni tutsun və enli qalsın */
-    max-width: 340px !important;       /* Çox böyüməsinin qarşısını alır */
+  /* Məhsul kartlarının özü (Emporio Armani, Gucci və s.) */
+  /* Telefonda normal və səliqəli kiçik ölçüdə durması üçün */
+  .card, .product-card {
+    width: 80% !important;             /* Ekranın 80%-ni tutsun, kənarlarda boşluq qalsın */
+    max-width: 280px !important;       /* Kartın çox böyüməsinin qarşısını alır, balacalaşdırır */
+    min-width: 260px !important;
+    height: auto !important;           /* Hündürlüyü daxildəki elementlərə görə avtomatik tənzimləyir */
+    padding: 15px !important;
     display: flex !important;
     flex-direction: column !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
   }
 
-  /* Kartın içindəki şəkillər sıxılmasın deyə */
-  .product-card img, .card img {
+  /* Kartın içindəki şəkillərin əyilmədən, səliqəli kiçilməsi */
+  .card img, .product-card img {
     width: 100% !important;
-    height: 280px !important;          /* Şəkillərə normal hündürlük verir */
-    object-fit: cover !important;      /* Şəkli əymədən çərçivəyə sığdırır */
+    height: 240px !important;          /* Şəkillərə ideal telefon hündürlüyü verir */
+    object-fit: cover !important;      /* Şəkli deformasiya etmədən qutuya sığdırır */
+    border-radius: 8px !important;
   }
 }
-

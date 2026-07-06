@@ -1,28 +1,26 @@
+/* --- SHOP SƏHİFƏSİ TELEFON RESPONSIVE --- */
 @media screen and (max-width: 768px) {
-  /* Məhsul kartlarını saxlayan əsas böyük qutu */
-  /* Diqqət: Aşağıdakı .products-container hissəsini öz kodundakı klas adı ilə əvəzlə */
-  .products-container, .cards, .secondsection {
-    display: flex !important;
-    flex-direction: column !important; /* Kartları mütləq alt-alta salır */
-    align-items: center !important;    /* Kartları ekranda ortalayır */
-    gap: 25px !important;              /* Kartların arasına boşluq qoyur */
-    width: 100% !important;
-    overflow-x: hidden !important;     /* Sağa-sola lazımsız sürüşməni bağlayır */
+  
+  /* Shop səhifəsinin əsas başlığı */
+  .shop h1, .shop h2 {
+    text-align: center !important;
+    font-size: 26px !important;
+    margin-bottom: 20px !important;
   }
 
-  /* Məhsul kartlarının özü (Videodakı Emporio Armani, Gucci kartları) */
-  /* Diqqət: .product-card hissəsini öz kart klasınla əvəzlə */
-  .product-card, .card {
-    width: 85% !important;             /* Telefonda ekranın 85%-ni tutsun və enli qalsın */
-    max-width: 340px !important;       /* Çox böyüməsinin qarşısını alır */
+  /* Shop səhifəsindəki məhsul şəbəkəsi */
+  .shop-container, .shop-products {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: column !important; /* Telefonda alt-alta düzür */
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
   }
 
-  /* Kartın içindəki şəkillər sıxılmasın deyə */
-  .product-card img, .card img {
-    width: 100% !important;
-    height: 280px !important;          /* Şəkillərə normal hündürlük verir */
-    object-fit: cover !important;      /* Şəkli əymədən çərçivəyə sığdırır */
+  /* Shop səhifəsindəki kartların ölçüsü */
+  .shop-card, .shop-item {
+    width: 80% !important;
+    max-width: 280px !important;
+    text-align: center !important;
   }
 }
