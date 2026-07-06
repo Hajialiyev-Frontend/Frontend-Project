@@ -1,26 +1,42 @@
-/* --- SHOP SƏHİFƏSİ TELEFON RESPONSIVE --- */
+/* --- TELEFON REJİMİ (MƏCBURİ) --- */
 @media screen and (max-width: 768px) {
-  
-  /* Shop səhifəsinin əsas başlığı */
-  .shop h1, .shop h2 {
-    text-align: center !important;
-    font-size: 26px !important;
-    margin-bottom: 20px !important;
-  }
-
-  /* Shop səhifəsindəki məhsul şəbəkəsi */
-  .shop-container, .shop-products {
+  /* Səhifəni saxlayan ən əsas böyük konteyner */
+  .shop-page-container, .shop-layout {
     display: flex !important;
-    flex-direction: column !important; /* Telefonda alt-alta düzür */
+    flex-direction: column !important; /* Hər şeyi yuxarıdan aşağı düzür */
     align-items: center !important;
-    gap: 20px !important;
-    width: 100% !important;
   }
 
-  /* Shop səhifəsindəki kartların ölçüsü */
-  .shop-card, .shop-item {
-    width: 80% !important;
-    max-width: 280px !important;
+  /* Məhsul kartlarının durduğu sahə (2 üstdə, 2 altda olacaq şəkildə) */
+  .shop-products-grid, .shop-cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 2 bərabər sütun yaradır */
+    gap: 15px !important; /* Kartlar arası boşluq */
+    width: 100% !important;
+    padding: 10px !important;
+    order: 1 !important; /* Kartları yuxarıda saxlayır */
+  }
+
+  /* Shop səhifəsindəki fərdi kartlar */
+  .shop-card {
+    width: 100% !important;
+    max-width: 170px !important;
+    height: auto !important;
+    padding: 10px !important;
+  }
+
+  .shop-card img {
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover !important;
+  }
+
+  /* "Shop / Basket" yazısı və ya sağ panel hissəsi */
+  .shop-basket-title, .basket-sidebar {
+    width: 100% !important;
     text-align: center !important;
+    margin-top: 30px !important;
+    padding: 20px !important;
+    order: 2 !important; /* Bu əmr yazını tam olaraq kartların ALTINA salır */
   }
 }
