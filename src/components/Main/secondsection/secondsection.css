@@ -53,68 +53,33 @@
     transform: translateY(-10px);
     box-shadow:  0 10px 25px rgba(0,0,0,0.2);
 }
-/* --- KOMPÜTER ÜÇÜN ƏSAS AYARLAR --- */
-.formsection {
-  width: 100% !important;
-  min-height: 500px !important; /* Arxa fon şəklinin kompüterdəki hündürlüyü */
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  box-sizing: border-box !important;
-  padding: 20px !important;
-  
-  /* Əgər bura arxa fon şəkli qoymusansa, bu 3 sətir şəklin telefonda əyilməsinin qarşısını alır */
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
 
-.inpdiv {
-  position: relative !important;
-  display: flex !important;
-  align-items: center !important;
-  width: 100% !important;
-  max-width: 500px !important; /* Kompüterdə axtarış çubuğu çox uzanmasın deyə maksimum en qoyuruq */
-}
-
-.input {
-  width: 100% !important;
-  padding: 12px 45px 12px 20px !important; /* Sağ tərəfdən axtarış ikonu üçün boşluq buraxır */
-  border: 1px solid #ccc !important;
-  border-radius: 25px !important; /* Oval, müasir görünüşlü input */
-  outline: none !important;
-  font-size: 16px !important;
-  background-color: rgba(255, 255, 255, 0.9) !important; /* İnputun içi yüngül şəffaf ağ olsun */
-}
-
-.icon {
-  position: absolute !important;
-  right: 18px !important; /* İkonu input qutusunun tam sağına yerləşdirir */
-  font-size: 22px !important;
-  color: #333 !important;
-  z-index: 2 !important;
-}
-
-
-/* --- TELEFON ÜÇÜN RESPONSIVE AYARLAR --- */
 @media screen and (max-width: 768px) {
-  .formsection {
-    min-height: 300px !important; /* Telefonda ekran kiçik olduğu üçün hündürlüyü bir az azaldırıq */
-    padding: 15px !important;
+  /* Məhsul kartlarını saxlayan əsas böyük qutu */
+  /* Diqqət: Aşağıdakı .products-container hissəsini öz kodundakı klas adı ilə əvəzlə */
+  .products-container, .cards, .secondsection {
+    display: flex !important;
+    flex-direction: column !important; /* Kartları mütləq alt-alta salır */
+    align-items: center !important;    /* Kartları ekranda ortalayır */
+    gap: 25px !important;              /* Kartların arasına boşluq qoyur */
+    width: 100% !important;
+    overflow-x: hidden !important;     /* Sağa-sola lazımsız sürüşməni bağlayır */
   }
 
-  .inpdiv {
-    width: 85% !important; /* Telefonda axtarış çubuğu ekranın 85%-ni tutsun ki, kənarlara toxunmasın */
+  /* Məhsul kartlarının özü (Videodakı Emporio Armani, Gucci kartları) */
+  /* Diqqət: .product-card hissəsini öz kart klasınla əvəzlə */
+  .product-card, .card {
+    width: 85% !important;             /* Telefonda ekranın 85%-ni tutsun və enli qalsın */
+    max-width: 340px !important;       /* Çox böyüməsinin qarşısını alır */
+    display: flex !important;
+    flex-direction: column !important;
   }
 
-  .input {
-    font-size: 14px !important; /* Telefonda yazı ölçüsünü bir az kiçildirik */
-    padding: 10px 40px 10px 15px !important;
-  }
-  
-  .icon {
-    font-size: 18px !important; /* Telefonda axtarış ikonunu da nisbətən kiçildirik */
-    right: 15px !important;
+  /* Kartın içindəki şəkillər sıxılmasın deyə */
+  .product-card img, .card img {
+    width: 100% !important;
+    height: 280px !important;          /* Şəkillərə normal hündürlük verir */
+    object-fit: cover !important;      /* Şəkli əymədən çərçivəyə sığdırır */
   }
 }
 
